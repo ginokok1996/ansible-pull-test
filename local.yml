@@ -1,0 +1,11 @@
+---
+- name: Install Docker
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Install yum utils
+    yum:
+      name: 
+        - yum-utils
+      state: latest
